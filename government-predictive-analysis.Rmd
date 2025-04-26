@@ -1,0 +1,24 @@
+---
+title: "\\textbf{Government - Seattle Resident's Customer Requests}"
+author: "Justin Mai"
+date: "`r Sys.Date()`"
+output:
+  pdf_document:
+    toc: true
+    latex_engine: xelatex
+  html_document: default
+geometry: margin=40pt
+fontsize: 11pt
+header-includes:
+  - \usepackage{titling}
+  - \usepackage{titlesec}
+  - \titlespacing*{\title}{0pt}{0pt}{0pt}
+  - \setlength{\droptitle}{-2em}
+  - \setlength{\topskip}{0pt} 
+mainfont: "Times New Roman"
+---
+
+```{r}
+library(tidyverse)
+```
+
