@@ -1,3 +1,71 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Ensure the navbar spans the full width */
+  background-color: #333;
+  color: white;
+  padding: 1rem; /* Add consistent padding */
+  display: flex;
+  justify-content: space-between; /* Space links evenly */
+  align-items: center;
+  flex-wrap: wrap; /* Allow links to wrap to the next line if needed */
+  gap: 1rem; /* Add spacing between links */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 0.3rem 0.5rem; /* Smaller padding */
+  font-size: 0.9rem; /* Slightly smaller font size */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.navbar a:hover {
+  background-color: #575757;
+  border-radius: 5px;
+}
+
+.section {
+  padding: 100px 20px;
+  min-height: 100vh;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 60px; /* Offset for the fixed navbar */
+}
+
+#home {
+  background-color: #f4f4f4;
+}
+
+#about {
+  background-color: #eaeaea;
+}
+
+#data-analysis {
+  background-color: #dcdcdc;
+}
+
+#summary {
+  background-color: #cfcfcf;
+}
+
+#footer {
+  background-color: #bfbfbf;
+  text-align: center;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -39,4 +107,45 @@
 
 .read-the-docs {
   color: #888;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .navbar {
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }
+
+  .navbar a {
+    font-size: 1.2rem;
+  }
+
+  .section {
+    padding: 100px 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar {
+    padding: 1rem 4rem;
+  }
+
+  .section {
+    padding: 100px 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack links vertically */
+    align-items: flex-start; /* Align links to the left */
+    padding: 1rem;
+  }
+
+  .navbar a {
+    padding: 0.5rem 1rem; /* Adjust padding for smaller screens */
+    font-size: 0.85rem; /* Slightly smaller font for readability */
+  }
 }
