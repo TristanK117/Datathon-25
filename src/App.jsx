@@ -3,8 +3,8 @@ import './App.css'
 function Home() {
   return (
     <section id="home" className="section">
-      <h1>Home Page</h1>
-      <p>Welcome to the home section of the website.</p>
+      <h1>DATABANG</h1>
+      <p>WE TURN REQUESTS INTO RESULTS</p>
     </section>
   )
 }
@@ -12,8 +12,8 @@ function Home() {
 function About() {
   return (
     <section id="about" className="section">
-      <h1>About Me</h1>
-      <p>This is the about me section.</p>
+      <h1>About</h1>
+      <p></p>
     </section>
   )
 }
@@ -37,10 +37,12 @@ function Summary() {
 }
 
 function Footer() {
-  return (
+  return (  
     <footer id="footer" className="section">
       <h1>Footer</h1>
-      <p>Thank you for visiting!</p>
+      <p>&copy;  2025 DataBang. All Rights Reserved </p>
+      <p> 
+      </p>
     </footer>
   )
 }
@@ -50,7 +52,7 @@ function App() {
     <>
       <nav className="navbar">
         <a href="#home">Home</a>
-        <a href="#about">About Me</a>
+        <a href="#about">About</a>
         <a href="#data-analysis">Data Analysis</a>
         <a href="#summary">Summary</a>
         <a href="#footer">Footer</a>
