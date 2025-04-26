@@ -1,0 +1,540 @@
+Month,Service_Request_Type,Number_of_Requests
+1,Abandoned Vehicle,3
+1,Abandoned Vehicle/72hr Parking Ordinance,15572
+1,ADA Request (Transportation),17
+1,Animal Noise,182
+1,Bicycle Facility Maintenance,86
+1,Business Related Complaint,77
+1,Business Violation of Public Health Requirements,48
+1,Clogged Storm Drain,1465
+1,Damaged Sidewalk,457
+1,Dead Animal,484
+1,Feedback about the Customer Service Requests Portal,15
+1,"Feedback about the Find It, Fix It mobile app",21
+1,Found a Pet,47
+1,General Inquiry - Animal Shelter,332
+1,General Inquiry - City Light,2011
+1,General Inquiry - Customer Service Bureau,8231
+1,General Inquiry - Police Department,769
+1,General Inquiry - Public Utilities,1069
+1,General Inquiry - Transportation,4116
+1,Graffiti,9889
+1,Illegal Dumping / Needles,10925
+1,Internet/Cable Issue,273
+1,Lost a Pet,57
+1,Nightlife Noise Complaint,120
+1,Nuisance dogs in a park,420
+1,Overgrown Vegetation,1161
+1,Parking Enforcement,10894
+1,Parks and Recreation Maintenance,2526
+1,Pollution Report Form,35
+1,Pothole,10381
+1,Public Garage or Parking Lot Complaint,23
+1,Public Litter and Recycling Cans,657
+1,Safe Routes to School,37
+1,Scooter or Bike Share Issue,1375
+1,Seattle Center,188
+1,Snow and Ice,133
+1,Street Sign and Traffic Signal Maintenance,2073
+1,Street Sign Maintenance,1083
+1,Streetlight Maintenance,2710
+1,"Taxi, TNC, or Limousine Complaint or Compliment",48
+1,Towing Complaint - Public Impound,22
+1,Towing Impound Complaint,45
+1,Traffic Calming,11
+1,Traffic Signal Maintenance,664
+1,Unauthorized Encampment,9751
+1,Wireless or Small Cell Issue,9
+2,Abandoned Vehicle,6
+2,Abandoned Vehicle/72hr Parking Ordinance,14326
+2,ADA Request (Transportation),16
+2,Animal Noise,146
+2,Bicycle Facility Maintenance,75
+2,Business Related Complaint,68
+2,Business Violation of Public Health Requirements,33
+2,Clogged Storm Drain,823
+2,Damaged Sidewalk,388
+2,Dead Animal,492
+2,Feedback about the Customer Service Requests Portal,11
+2,"Feedback about the Find It, Fix It mobile app",7
+2,Found a Pet,50
+2,General Inquiry - Animal Shelter,355
+2,General Inquiry - City Light,1702
+2,General Inquiry - Customer Service Bureau,7877
+2,General Inquiry - Police Department,688
+2,General Inquiry - Public Utilities,919
+2,General Inquiry - Transportation,3532
+2,Graffiti,8784
+2,Illegal Dumping / Needles,9259
+2,Internet/Cable Issue,252
+2,Lost a Pet,46
+2,Nightlife Noise Complaint,132
+2,Nuisance dogs in a park,363
+2,Overgrown Vegetation,1093
+2,Parking Enforcement,10174
+2,Parks and Recreation Maintenance,2695
+2,Pollution Report Form,29
+2,Pothole,5109
+2,Public Garage or Parking Lot Complaint,20
+2,Public Litter and Recycling Cans,561
+2,Safe Routes to School,25
+2,Scooter or Bike Share Issue,1135
+2,Seattle Center,120
+2,Snow and Ice,53
+2,Street Sign and Traffic Signal Maintenance,1821
+2,Street Sign Maintenance,1006
+2,Streetlight Maintenance,2055
+2,"Taxi, TNC, or Limousine Complaint or Compliment",49
+2,Towing Complaint - Public Impound,16
+2,Towing Impound Complaint,26
+2,Traffic Calming,18
+2,Traffic Signal Maintenance,570
+2,Unauthorized Encampment,10004
+2,Wireless or Small Cell Issue,14
+3,Abandoned Vehicle,2
+3,Abandoned Vehicle/72hr Parking Ordinance,17800
+3,ADA Request (Transportation),16
+3,Animal Noise,204
+3,Bicycle Facility Maintenance,72
+3,Business Related Complaint,109
+3,Business Violation of Public Health Requirements,77
+3,Clogged Storm Drain,877
+3,Damaged Sidewalk,475
+3,Dead Animal,532
+3,Feedback about the Customer Service Requests Portal,8
+3,"Feedback about the Find It, Fix It mobile app",16
+3,Found a Pet,84
+3,General Inquiry - Animal Shelter,409
+3,General Inquiry - City Light,2026
+3,General Inquiry - Customer Service Bureau,9384
+3,General Inquiry - Police Department,741
+3,General Inquiry - Public Utilities,937
+3,General Inquiry - Transportation,4620
+3,Graffiti,12106
+3,Illegal Dumping / Needles,11409
+3,Internet/Cable Issue,342
+3,Lost a Pet,107
+3,Nightlife Noise Complaint,177
+3,Nuisance dogs in a park,299
+3,Overgrown Vegetation,1233
+3,Parking Enforcement,12319
+3,Parks and Recreation Maintenance,3248
+3,Pollution Report Form,23
+3,Pothole,7290
+3,Public Garage or Parking Lot Complaint,25
+3,Public Litter and Recycling Cans,712
+3,Public Utilities Direct Mail Opt Out,1
+3,Safe Routes to School,43
+3,Scooter or Bike Share Issue,1680
+3,Seattle Center,98
+3,Snow and Ice,3
+3,Street Sign and Traffic Signal Maintenance,2237
+3,Street Sign Maintenance,1316
+3,Streetlight Maintenance,1909
+3,"Taxi, TNC, or Limousine Complaint or Compliment",55
+3,Towing Complaint - Public Impound,22
+3,Towing Impound Complaint,32
+3,Traffic Calming,14
+3,Traffic Signal Maintenance,608
+3,Unauthorized Encampment,12654
+3,Wireless or Small Cell Issue,13
+3,ZZ-Baseline Testing Only,4
+3,ZZDONOTUSE - For Testing Only,1
+4,Abandoned Vehicle,2
+4,Abandoned Vehicle/72hr Parking Ordinance,15647
+4,ADA Request (Transportation),10
+4,Animal Noise,202
+4,Bicycle Facility Maintenance,95
+4,Business Related Complaint,103
+4,Business Violation of Public Health Requirements,52
+4,Clogged Storm Drain,620
+4,Damaged Sidewalk,406
+4,Dead Animal,475
+4,Feedback about the Customer Service Requests Portal,12
+4,"Feedback about the Find It, Fix It mobile app",18
+4,Found a Pet,84
+4,General Inquiry - Animal Shelter,329
+4,General Inquiry - City Light,1765
+4,General Inquiry - Customer Service Bureau,8789
+4,General Inquiry - Police Department,742
+4,General Inquiry - Public Utilities,874
+4,General Inquiry - Transportation,4204
+4,Graffiti,10011
+4,Illegal Dumping / Needles,10564
+4,Internet/Cable Issue,244
+4,Lost a Pet,111
+4,Nightlife Noise Complaint,171
+4,Nuisance dogs in a park,308
+4,Overgrown Vegetation,1303
+4,Parking Enforcement,12048
+4,Parks and Recreation Maintenance,3243
+4,Pollution Report Form,26
+4,Pothole,4559
+4,Public Garage or Parking Lot Complaint,19
+4,Public Litter and Recycling Cans,704
+4,Safe Routes to School,16
+4,Scooter or Bike Share Issue,1974
+4,Seattle Center,61
+4,Street Sign and Traffic Signal Maintenance,2373
+4,Street Sign Maintenance,1252
+4,Streetlight Maintenance,1279
+4,"Taxi, TNC, or Limousine Complaint or Compliment",77
+4,Towing Complaint - Public Impound,13
+4,Towing Impound Complaint,40
+4,Traffic Calming,28
+4,Traffic Signal Maintenance,604
+4,Unauthorized Encampment,11360
+4,Wireless or Small Cell Issue,10
+5,Abandoned Vehicle,2
+5,Abandoned Vehicle/72hr Parking Ordinance,13725
+5,ADA Request (Transportation),17
+5,Animal Noise,209
+5,Business Related Complaint,65
+5,Business Violation of Public Health Requirements,17
+5,Clogged Storm Drain,504
+5,Damaged Sidewalk,344
+5,Dead Animal,481
+5,Feedback about the Customer Service Requests Portal,6
+5,"Feedback about the Find It, Fix It mobile app",22
+5,Found a Pet,63
+5,General Inquiry - Animal Shelter,320
+5,General Inquiry - City Light,1505
+5,General Inquiry - Customer Service Bureau,8010
+5,General Inquiry - Police Department,619
+5,General Inquiry - Public Utilities,665
+5,General Inquiry - Transportation,3555
+5,Graffiti,8270
+5,Illegal Dumping / Needles,9205
+5,Internet/Cable Issue,192
+5,Lost a Pet,108
+5,Nightlife Noise Complaint,221
+5,Nuisance dogs in a park,73
+5,Overgrown Vegetation,2914
+5,Parking Enforcement,10720
+5,Parks and Recreation Maintenance,2979
+5,Pollution Report Form,25
+5,Pothole,3132
+5,Public Garage or Parking Lot Complaint,16
+5,Public Litter and Recycling Cans,575
+5,Public Utilities Direct Mail Opt Out,1
+5,Safe Routes to School,16
+5,Scooter or Bike Share Issue,1682
+5,Seattle Center,72
+5,Street Sign and Traffic Signal Maintenance,2289
+5,Street Sign Maintenance,822
+5,Streetlight Maintenance,915
+5,"Taxi, TNC, or Limousine Complaint or Compliment",73
+5,Towing Complaint - Public Impound,19
+5,Towing Impound Complaint,33
+5,Traffic Calming,24
+5,Traffic Signal Maintenance,269
+5,Unauthorized Encampment,7139
+5,Wireless or Small Cell Issue,5
+6,Abandoned Vehicle,3
+6,Abandoned Vehicle/72hr Parking Ordinance,14340
+6,ADA Request (Transportation),25
+6,Animal Noise,195
+6,Business Related Complaint,49
+6,Business Violation of Public Health Requirements,26
+6,Clogged Storm Drain,495
+6,Damaged Sidewalk,370
+6,Dead Animal,489
+6,Feedback about the Customer Service Requests Portal,15
+6,"Feedback about the Find It, Fix It mobile app",27
+6,Found a Pet,61
+6,General Inquiry - Animal Shelter,300
+6,General Inquiry - City Light,1616
+6,General Inquiry - Customer Service Bureau,8346
+6,General Inquiry - Police Department,621
+6,General Inquiry - Public Utilities,756
+6,General Inquiry - Transportation,3717
+6,Graffiti,7490
+6,Illegal Dumping / Needles,9282
+6,Internet/Cable Issue,191
+6,Lost a Pet,112
+6,Nightlife Noise Complaint,266
+6,Nuisance dogs in a park,109
+6,Overgrown Vegetation,4620
+6,Parking Enforcement,10915
+6,Parks and Recreation Maintenance,3340
+6,Pollution Report Form,18
+6,Pothole,2520
+6,Public Garage or Parking Lot Complaint,28
+6,Public Litter and Recycling Cans,619
+6,Safe Routes to School,4
+6,Scooter or Bike Share Issue,2210
+6,Seattle Center,54
+6,Street Sign and Traffic Signal Maintenance,1498
+6,Street Sign Maintenance,1377
+6,Streetlight Maintenance,794
+6,"Taxi, TNC, or Limousine Complaint or Compliment",92
+6,Towing Complaint - Public Impound,23
+6,Towing Impound Complaint,38
+6,Traffic Calming,27
+6,Traffic Signal Maintenance,630
+6,Unauthorized Encampment,8089
+6,Wireless or Small Cell Issue,4
+7,Abandoned Vehicle,1
+7,Abandoned Vehicle/72hr Parking Ordinance,14279
+7,ADA Request (Transportation),23
+7,Animal Noise,276
+7,Business Related Complaint,86
+7,Clogged Storm Drain,319
+7,Damaged Sidewalk,401
+7,Dead Animal,578
+7,Feedback about the Customer Service Requests Portal,11
+7,"Feedback about the Find It, Fix It mobile app",29
+7,Found a Pet,82
+7,General Inquiry - Animal Shelter,321
+7,General Inquiry - City Light,1626
+7,General Inquiry - Customer Service Bureau,7777
+7,General Inquiry - Police Department,695
+7,General Inquiry - Public Utilities,775
+7,General Inquiry - Transportation,4022
+7,Graffiti,8642
+7,Illegal Dumping / Needles,10395
+7,Internet/Cable Issue,250
+7,Lost a Pet,130
+7,Nightlife Noise Complaint,250
+7,Nuisance dogs in a park,106
+7,Overgrown Vegetation,3669
+7,Parking Enforcement,11673
+7,Parks and Recreation Maintenance,3659
+7,Pollution Report Form,25
+7,Pothole,1915
+7,Public Garage or Parking Lot Complaint,15
+7,Public Litter and Recycling Cans,845
+7,Safe Routes to School,5
+7,Scooter or Bike Share Issue,2504
+7,Seattle Center,89
+7,Street Sign and Traffic Signal Maintenance,1458
+7,Street Sign Maintenance,1248
+7,Streetlight Maintenance,767
+7,"Taxi, TNC, or Limousine Complaint or Compliment",108
+7,Towing Complaint - Public Impound,19
+7,Towing Impound Complaint,27
+7,Traffic Calming,27
+7,Traffic Signal Maintenance,554
+7,Unauthorized Encampment,12897
+7,Wireless or Small Cell Issue,10
+8,Abandoned Vehicle,1
+8,Abandoned Vehicle/72hr Parking Ordinance,14975
+8,ADA Request (Transportation),24
+8,Animal Noise,250
+8,Business Related Complaint,74
+8,Clogged Storm Drain,377
+8,Damaged Sidewalk,445
+8,Dead Animal,458
+8,Feedback about the Customer Service Requests Portal,8
+8,"Feedback about the Find It, Fix It mobile app",20
+8,Found a Pet,72
+8,General Inquiry - Animal Shelter,326
+8,General Inquiry - City Light,1615
+8,General Inquiry - Customer Service Bureau,8186
+8,General Inquiry - Police Department,664
+8,General Inquiry - Public Utilities,899
+8,General Inquiry - Transportation,3966
+8,Graffiti,8434
+8,Illegal Dumping / Needles,12028
+8,Internet/Cable Issue,178
+8,Lost a Pet,108
+8,Nightlife Noise Complaint,215
+8,Nuisance dogs in a park,117
+8,Overgrown Vegetation,2842
+8,Parking Enforcement,11723
+8,Parks and Recreation Maintenance,3409
+8,Pollution Report Form,31
+8,Pothole,1885
+8,Public Garage or Parking Lot Complaint,29
+8,Public Litter and Recycling Cans,745
+8,Safe Routes to School,10
+8,Scooter or Bike Share Issue,2264
+8,Seattle Center,66
+8,Street Sign and Traffic Signal Maintenance,1533
+8,Street Sign Maintenance,1250
+8,Streetlight Maintenance,1191
+8,"Taxi, TNC, or Limousine Complaint or Compliment",108
+8,Towing Complaint - Public Impound,32
+8,Towing Impound Complaint,25
+8,Traffic Calming,24
+8,Traffic Signal Maintenance,641
+8,Unauthorized Encampment,13857
+8,Wireless or Small Cell Issue,2
+9,Abandoned Vehicle,1
+9,Abandoned Vehicle/72hr Parking Ordinance,14069
+9,ADA Request (Transportation),24
+9,Animal Noise,221
+9,Business Related Complaint,77
+9,Clogged Storm Drain,654
+9,Damaged Sidewalk,377
+9,Dead Animal,572
+9,Feedback about the Customer Service Requests Portal,8
+9,"Feedback about the Find It, Fix It mobile app",19
+9,Found a Pet,70
+9,General Inquiry - Animal Shelter,351
+9,General Inquiry - City Light,1552
+9,General Inquiry - Customer Service Bureau,7674
+9,General Inquiry - Police Department,697
+9,General Inquiry - Public Utilities,845
+9,General Inquiry - Transportation,3733
+9,Graffiti,8230
+9,Illegal Dumping / Needles,11593
+9,Internet/Cable Issue,199
+9,Lost a Pet,129
+9,Nightlife Noise Complaint,203
+9,Nuisance dogs in a park,100
+9,Overgrown Vegetation,2082
+9,Parking Enforcement,11981
+9,Parks and Recreation Maintenance,3038
+9,Pollution Report Form,12
+9,Pothole,1851
+9,Public Garage or Parking Lot Complaint,20
+9,Public Litter and Recycling Cans,747
+9,Safe Routes to School,27
+9,Scooter or Bike Share Issue,2009
+9,Seattle Center,78
+9,Street Sign and Traffic Signal Maintenance,1651
+9,Street Sign Maintenance,1188
+9,Streetlight Maintenance,1602
+9,"Taxi, TNC, or Limousine Complaint or Compliment",92
+9,Towing Complaint - Public Impound,24
+9,Towing Impound Complaint,28
+9,Traffic Calming,8
+9,Traffic Signal Maintenance,586
+9,Unauthorized Encampment,14017
+9,Wireless or Small Cell Issue,14
+9,ZZ-Baseline Testing Only,7
+9,ZZDONOTUSE - For Testing Only,9
+10,Abandoned Vehicle/72hr Parking Ordinance,15917
+10,ADA Request (Transportation),16
+10,Animal Noise,144
+10,Business Related Complaint,64
+10,Clogged Storm Drain,971
+10,Damaged Sidewalk,399
+10,Dead Animal,460
+10,Feedback about the Customer Service Requests Portal,20
+10,"Feedback about the Find It, Fix It mobile app",22
+10,Found a Pet,67
+10,General Inquiry - Animal Shelter,261
+10,General Inquiry - City Light,1586
+10,General Inquiry - Customer Service Bureau,7417
+10,General Inquiry - Police Department,668
+10,General Inquiry - Public Utilities,826
+10,General Inquiry - Transportation,3877
+10,Graffiti,8425
+10,Illegal Dumping / Needles,9192
+10,Internet/Cable Issue,167
+10,Lost a Pet,101
+10,Nightlife Noise Complaint,198
+10,Nuisance dogs in a park,90
+10,Overgrown Vegetation,1755
+10,Parking Enforcement,12006
+10,Parks and Recreation Maintenance,2776
+10,Pollution Report Form,27
+10,Pothole,2144
+10,Public Garage or Parking Lot Complaint,22
+10,Public Litter and Recycling Cans,571
+10,Safe Routes to School,6
+10,Scooter or Bike Share Issue,2130
+10,Seattle Center,60
+10,Street Sign and Traffic Signal Maintenance,1483
+10,Street Sign Maintenance,1128
+10,Streetlight Maintenance,2119
+10,"Taxi, TNC, or Limousine Complaint or Compliment",55
+10,Towing Complaint - Public Impound,16
+10,Towing Impound Complaint,25
+10,Traffic Calming,18
+10,Traffic Signal Maintenance,572
+10,Unauthorized Encampment,12857
+10,Wireless or Small Cell Issue,7
+10,ZZ-Baseline Testing Only,3
+10,ZZDONOTUSE - For Testing Only,4
+11,Abandoned Vehicle/72hr Parking Ordinance,13684
+11,ADA Request (Transportation),21
+11,Animal Noise,121
+11,Bicycle Facility Maintenance,102
+11,Business Related Complaint,44
+11,Clogged Storm Drain,1885
+11,Damaged Sidewalk,287
+11,Dead Animal,481
+11,Feedback about the Customer Service Requests Portal,24
+11,"Feedback about the Find It, Fix It mobile app",61
+11,Found a Pet,50
+11,General Inquiry - Animal Shelter,271
+11,General Inquiry - City Light,1592
+11,General Inquiry - Customer Service Bureau,6133
+11,General Inquiry - Police Department,652
+11,General Inquiry - Public Utilities,614
+11,General Inquiry - Transportation,3238
+11,Graffiti,6759
+11,Illegal Dumping / Needles,6968
+11,Internet/Cable Issue,171
+11,Lost a Pet,72
+11,Nightlife Noise Complaint,125
+11,Nuisance dogs in a park,86
+11,Overgrown Vegetation,1361
+11,Parking Enforcement,9290
+11,Parks and Recreation Maintenance,2304
+11,Pollution Report Form,19
+11,Pothole,2736
+11,Public Garage or Parking Lot Complaint,22
+11,Public Litter and Recycling Cans,473
+11,Safe Routes to School,3
+11,Scooter or Bike Share Issue,1477
+11,Seattle Center,70
+11,Snow and Ice,3
+11,Street Sign and Traffic Signal Maintenance,1378
+11,Street Sign Maintenance,1133
+11,Streetlight Maintenance,2240
+11,"Taxi, TNC, or Limousine Complaint or Compliment",52
+11,Towing Complaint - Public Impound,22
+11,Towing Impound Complaint,27
+11,Traffic Calming,13
+11,Traffic Signal Maintenance,546
+11,Unauthorized Encampment,8360
+11,Wireless or Small Cell Issue,7
+11,ZZDONOTUSE - For Testing Only,1
+12,Abandoned Vehicle/72hr Parking Ordinance,13350
+12,ADA Request (Transportation),13
+12,Animal Noise,134
+12,Bicycle Facility Maintenance,224
+12,Business Related Complaint,54
+12,Clogged Storm Drain,1577
+12,Damaged Sidewalk,233
+12,Dead Animal,404
+12,Feedback about the Customer Service Requests Portal,15
+12,"Feedback about the Find It, Fix It mobile app",15
+12,Found a Pet,41
+12,General Inquiry - Animal Shelter,235
+12,General Inquiry - City Light,1412
+12,General Inquiry - Customer Service Bureau,5313
+12,General Inquiry - Police Department,608
+12,General Inquiry - Public Utilities,811
+12,General Inquiry - Transportation,3025
+12,Graffiti,6852
+12,Illegal Dumping / Needles,6546
+12,Internet/Cable Issue,184
+12,Lost a Pet,61
+12,Nightlife Noise Complaint,83
+12,Nuisance dogs in a park,105
+12,Overgrown Vegetation,928
+12,Parking Enforcement,7982
+12,Parks and Recreation Maintenance,2223
+12,Pollution Report Form,25
+12,Pothole,3541
+12,Public Garage or Parking Lot Complaint,22
+12,Public Litter and Recycling Cans,543
+12,Safe Routes to School,5
+12,Scooter or Bike Share Issue,1281
+12,Seattle Center,62
+12,Snow and Ice,11
+12,Street Sign and Traffic Signal Maintenance,1289
+12,Street Sign Maintenance,1054
+12,Streetlight Maintenance,2056
+12,"Taxi, TNC, or Limousine Complaint or Compliment",55
+12,Towing Complaint - Public Impound,26
+12,Towing Impound Complaint,38
+12,Traffic Calming,15
+12,Traffic Signal Maintenance,513
+12,Unauthorized Encampment,8157
+12,Wireless or Small Cell Issue,11

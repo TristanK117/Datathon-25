@@ -1,6 +1,74 @@
 SELECT *
 FROM [clean-customer-service];
 
+-- Q1: Visualize the customer requests over time. What trends do we see by: 
+-- Month
+
+WITH month AS(
+    SELECT
+    Created_Date,
+    Service_Request_Type,
+    YEAR(Created_Date) AS Year,
+    MONTH(Created_Date) AS Month,
+    DAY(Created_Date) AS Day,
+    DATEPART(HOUR, Created_Date) AS Hour
+    FROM [clean-customer-service]
+)
+SELECT Month, Service_Request_Type, COUNT(*) AS Number_of_Requests
+FROM month
+GROUP BY Month, Service_Request_Type
+ORDER BY Month, Service_Request_Type
+
+WITH year AS(
+    SELECT
+    Created_Date,
+    Service_Request_Type,
+    YEAR(Created_Date) AS Year,
+    MONTH(Created_Date) AS Month,
+    DAY(Created_Date) AS Day,
+    DATEPART(HOUR, Created_Date) AS Hour
+    FROM [clean-customer-service]
+)
+SELECT Year, Service_Request_Type, COUNT(*) AS Number_of_Requests
+FROM year
+GROUP BY Year, Service_Request_Type
+ORDER BY year, Service_Request_Type
+
+WITH hour AS(
+    SELECT
+    Created_Date,
+    Service_Request_Type,
+    YEAR(Created_Date) AS Year,
+    MONTH(Created_Date) AS Month,
+    DAY(Created_Date) AS Day,
+    DATEPART(HOUR, Created_Date) AS Hour
+    FROM [clean-customer-service]
+)
+SELECT Hour, Service_Request_Type, COUNT(*) AS Number_of_Requests
+FROM hour
+GROUP BY hour, Service_Request_Type
+ORDER BY hour, Service_Request_Type
+
+
+WITH a AS (
+    SELECT CAST(Created_Date AS DATE) AS [Date]
+    FROM [clean-customer-service]
+    GROUP BY CAST(Created_Date AS DATE)
+), b AS (
+    SELECT 
+    c.*, 
+    COUNT(*) OVER (PARTITION BY c.Service_Request_Number, CAST(c.Created_Date AS DATE)) AS CountPerRequestPerDate,
+    COUNT(*) OVER (PARTITION BY CAST(c.Created_Date AS DATE)) AS TotalCountPerDate,
+    DATEPART(QUARTER, c.Created_Date) AS Quarter
+    FROM [clean-customer-service] c
+    JOIN a
+    ON CAST(c.Created_Date AS DATE) = a.[Date]
+)
+SELECT [Quarter], Service_Request_Type, COUNT(*) AS Number_of_Requests
+FROM b
+GROUP BY [Quarter], Service_Request_Type
+ORDER BY [Quarter], Service_Request_Type;
+
 -- Q2: Which areas with the highest service requests? 
 
 SELECT Neighborhood, COUNT(Service_Request_Number) Number_of_Requests
