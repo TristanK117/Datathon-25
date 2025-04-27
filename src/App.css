@@ -148,6 +148,17 @@ body {
   background-color: lightpink;
 }
 
+.data-link {
+  color: blue;
+  text-decoration: underline;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.data-link:hover {
+  color: darkblue;
+}
+
 /* Responsive Design */
 @media (min-width: 768px) {
   .navbar {

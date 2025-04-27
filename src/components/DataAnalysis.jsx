@@ -79,8 +79,41 @@ function DataAnalysis() {
       </div>
 
       <h2>
+      Recommendations and/or Further Questions:
+      </h2>
+      <p>
+      Given that March and Q1 are the busiest times for handling service requests, the City of Seattle should <strong>allocate more resources earlier in the year</strong> towards handling these civilian needs. Such items might include temporary staffing increases (perhaps look towards staffing in-need populations such as unhoused or unemployed), community engagement campaigns, or increased scheduled maintenance. Similarly, deploying a few <strong>extra hands to handle urgent requests (such as the presence of used needles in open, public spaces) in peak hours of the day</strong> (9 am) will help address requests more head-on and make Seattle safer for its residents. 
+      </p>
+
+      <p>
+      Conversely, DataBang also recommends <strong>preparing for slower periods at the end of the year</strong> in December and Q4, when requests dip in quantity. Not only will this preparation make increasing resources fiscally easier at the beginning of the year, but this time could also be spent prioritizing staff training or system upgrades to ensure that the City of Seattle continues to improve itself.
+      </p>
+
+      <p>
+      Some questions that would help provide greater insights into these trends and better prepare the City of Seattle include:
+      </p>
+      <ul>
+        <li>What type of reports are driving the increase in requests?</li>
+        <li>Is the increase in requests uniform across neighborhoods and zip codes?</li>
+        <li>Are the currently rising demands (based on 2024 numbers) able to be handled with the current systems in place?</li>
+        <li>How many of these requests, although separate, are reporting about the same physical issue?</li>
+      </ul>
+
+      <h2>
         Q2
       </h2>
+      <img
+        src="/img/q2.png" // Replace with the actual path to your image
+        alt="Predictive Plot"
+        style={{
+          width: '80%', // Adjust the width as needed
+          maxWidth: '800px', // Limit the maximum width
+          height: 'auto', // Maintain aspect ratio
+          margin: '20px 0', // Add spacing around the image
+          borderRadius: '8px', // Optional: Add rounded corners
+          boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', // Optional: Add a subtle shadow
+        }}
+      />
       <p>
       <strong>In respect to zip codes</strong>, there is a large range of service requests in each respective area, spanning from 3 to 79,209. The maximum can be attributed to the 98103 Seattle zip code, while the minimum belongs to the 98028 zip code.
       </p>
@@ -90,9 +123,36 @@ function DataAnalysis() {
       <p>
         <strong>When combining the zip code and neighborhood perspectives</strong> , we discover that the maximum zip code (98103) belongs primarily to the neighborhood(s) of Wallingford and Fremont, covering portions of Meridian, Phinney Ridge, and Greenwood. Broadway’s primary zip code, however, is 9810, with portions in 98112 and 98122 as well.
       </p>
+
+      <h2>
+      Recommendations and/or Further Questions:
+      </h2>
+      <p>
+      Because we do not know the exact proportions of zip codes/neighborhoods that partially dip into each other, <strong>we cannot verify that the count for a neighborhood is accurate compared to the count of the various zip codes it encompasses</strong>. Therefore, getting more detailed information in this regard would help verify the data and know where the heaviest quantity of civil infrastructure needs lies.
+      </p>
+      <p>
+      DataBang recommends that the City of Seattle take both neighborhood and zip code into account when analyzing this data and determining the needs of its constituents. While zip codes are useful to utilize due to their exact bounds and legal recognition, <strong>neighborhoods are what comprise Seattle, its residents, and their culture</strong>. The quality of life in these neighborhoods depends on the needs of the community being met, and by focusing purely on exact zip codes, the City of Seattle is missing out on incorporating a wider, qualitative view into its network of services.    
+      </p>
+
       <h2>
         Q3
       </h2>
+      <img
+        src="/img/q3.png" // Replace with the actual path to your image
+        alt="Predictive Plot"
+        style={{
+          width: '80%', // Adjust the width as needed
+          maxWidth: '800px', // Limit the maximum width
+          height: 'auto', // Maintain aspect ratio
+          margin: '20px 0', // Add spacing around the image
+          borderRadius: '8px', // Optional: Add rounded corners
+          boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', // Optional: Add a subtle shadow
+        }}
+      />
+
+        <h2>
+        Recommendations and/or Further Questions:
+        </h2>
     </section>
   );
 }
