@@ -29,7 +29,7 @@ function DataAnalysis() {
 
   return (
     <section id="data-analysis" className="section">
-      <h1>Data Analysis</h1>
+      <h1>Data Exploration</h1>
       <h2>Q1</h2>
       <div style={{ marginBottom: '20px' }}>
         {/* Buttons to switch views */}
@@ -149,10 +149,17 @@ function DataAnalysis() {
           boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', // Optional: Add a subtle shadow
         }}
       />
-
+      <p>
+      The service type with the most requests is <strong>abandoned vehicle/parking ordinance, with 177,684 requests</strong>. The service type with the least amount of requests is <strong>public utilities direct mail opt-out, with 2 requests</strong>. Over the years, the service type with the most requests (abandoned vehicle/parking ordinance) has quadrupled. Graffiti and illegal dumping/needles have also increased over time, almost tripling in size. </p>
         <h2>
         Recommendations and/or Further Questions:
         </h2>
+        <p>
+        DataBang recommends that the city of Seattle <strong>prioritize resources</strong> toward managing abandoned vehicle and parking ordinance violations, as this category is consistently the most reported and has grown significantly over time. It also recommends <strong>increasing targeted campaigns</strong> in areas with high reports of graffiti, illegal dumping, and needles to proactively address these issues before they escalate to the level of abandoned vehicle and parking ordinance violations.
+        </p>
+        <p>
+        DataBang has implemented predictive analytics to anticipate future surges in these service types, allowing for better staffing, budget allocation, and preventative strategies. The city should <strong>collaborate with other departments</strong> (such as Public Utilities, Transportation, and Public Safety) to create coordinated efforts for heavily impacted service categories, improving response times and reducing backlog.
+        </p>
     </section>
   );
 }
