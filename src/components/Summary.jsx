@@ -27,15 +27,15 @@ function Summary() {
           We then removed the Service Request Type and used the Service Request Categories instead to avoid multicollinearity effects on our model.
         </p>
         <img
-          src="../../daily-requests-plot.png" // Replace with the actual path to your image
+          src="../../daily-requests-plot.png"
           alt="Prediction Modelling"
           style={{
-            width: '80%', // Adjust the width as needed
-            maxWidth: '800px', // Limit the maximum width
-            height: 'auto', // Maintain aspect ratio
-            margin: '20px 0', // Add spacing around the image
-            borderRadius: '8px', // Optional: Add rounded corners
-            boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', // Optional: Add a subtle shadow
+            width: '80%', 
+            maxWidth: '800px', 
+            height: 'auto',
+            margin: '20px 0', 
+            borderRadius: '8px', 
+            boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', 
           }}
         />
         <p>
@@ -49,15 +49,15 @@ function Summary() {
         The plots with data points for every day also make the plots difficult to interpret, leading us to consolidate down to only using the sum of requests for each month, year, and category instead of using days.
         </p>
         <img
-          src="../../monthly-requests-plot.png" // Replace with the actual path to your image
+          src="../../monthly-requests-plot.png"
           alt="Prediction Modelling"
           style={{
-            width: '80%', // Adjust the width as needed
-            maxWidth: '800px', // Limit the maximum width
-            height: 'auto', // Maintain aspect ratio
-            margin: '20px 0', // Add spacing around the image
-            borderRadius: '8px', // Optional: Add rounded corners
-            boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', // Optional: Add a subtle shadow
+            width: '80%',
+            maxWidth: '800px', 
+            height: 'auto', 
+            margin: '20px 0', 
+            borderRadius: '8px', 
+            boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', 
           }}
         />
         <p>
@@ -68,15 +68,15 @@ function Summary() {
   following 3 months, we decided to use a basic ARIMA model, not accounting for seasonal effects.
         </p>
         <img
-          src="../../predictive-plot.png" // Replace with the actual path to your image
+          src="../../predictive-plot.png"
           alt="Prediction Modelling"
           style={{
-            width: '80%', // Adjust the width as needed
-            maxWidth: '800px', // Limit the maximum width
-            height: 'auto', // Maintain aspect ratio
-            margin: '20px 0', // Add spacing around the image
-            borderRadius: '8px', // Optional: Add rounded corners
-            boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', // Optional: Add a subtle shadow
+            width: '80%',
+            maxWidth: '800px', 
+            height: 'auto', 
+            margin: '20px 0', 
+            borderRadius: '8px', 
+            boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', 
           }}
         />
         <p>
