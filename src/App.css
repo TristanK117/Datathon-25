@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   scroll-behavior: smooth;
+  background-color: pink;
 }
 
 .navbar {
@@ -9,7 +12,7 @@ body {
   top: 0;
   left: 0;
   width: 100%; /* Ensure the navbar spans the full width */
-  background-color: #333;
+  background-color: plum;
   color: white;
   padding: 1rem; /* Add consistent padding */
   display: flex;
@@ -29,7 +32,7 @@ body {
 }
 
 .navbar a:hover {
-  background-color: #575757;
+  background-color: lightpink;
   border-radius: 5px;
 }
 
@@ -42,27 +45,39 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 60px; /* Offset for the fixed navbar */
+  background-color: lightpink; /* Match the footer's background color */
+}
+
+.section h1 {
+  color: #592B91; /* Set all section titles to the same color as Home */
+}
+
+.section p {
+  font-family: 'Poppins', sans-serif; /* Use the Poppins font */
+  font-size: 1.2rem; /* Adjust the font size */
+  line-height: 1.5; /* Improve readability */
+  color: black; /* Optional: Change the text color */
 }
 
 #home {
-  background-color: #f4f4f4;
+  background-color: lightpink;
 }
 
+
 #about {
-  background-color: #eaeaea;
+  background-color: lightpink;
 }
 
 #data-analysis {
-  background-color: #dcdcdc;
+  background-color: lightpink;
 }
 
 #summary {
-  background-color: #cfcfcf;
+  background-color: lightpink;
 }
 
 #footer {
-  background-color: #bfbfbf;
+  background-color: lightpink;
   text-align: center;
 }
 
