@@ -113,6 +113,9 @@ function DataAnalysis() {
         }}
       />
       <p>
+  <a href="https://public.tableau.com/app/profile/madison.trimmer/viz/25Datathon/Dashboard1?publish=yes" target="_blank" rel="noopener noreferrer"> Tableau Analysis</a>.
+</p>
+      <p>
       <strong>In respect to zip codes</strong>, there is a large range of service requests in each respective area, spanning from 3 to 79,209. The maximum can be attributed to the 98103 Seattle zip code, while the minimum belongs to the 98028 zip code.
       </p>
       <p>
@@ -147,6 +150,7 @@ function DataAnalysis() {
           boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', 
         }}
       />
+        <a href="https://public.tableau.com/app/profile/ria.harneja/viz/datathon_17457818690020/Dashboard1?publish=yes" target="_blank" rel="noopener noreferrer"> Tableau Analysis</a>.
       <p>
       The service type with the most requests is <strong>abandoned vehicle/parking ordinance, with 177,684 requests</strong>. The service type with the least amount of requests is <strong>public utilities direct mail opt-out, with 2 requests</strong>. Over the years, the service type with the most requests (abandoned vehicle/parking ordinance) has quadrupled. Graffiti and illegal dumping/needles have also increased over time, almost tripling in size. </p>
         <h2>
