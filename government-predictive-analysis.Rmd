@@ -100,7 +100,7 @@ df <- df %>%
       "ZZ-Baseline Testing Only", "ZZDONOTUSE - For Testing Only"
     ) ~ "Testing",
     
-    TRUE ~ "Other"  # catch anything unexpected
+    TRUE ~ "Other"
   ))
 ```
 
@@ -112,18 +112,22 @@ df_grouped <- df %>%
   summarise(Request_Count = sum(Request_Count)) %>%
   ungroup()
 
-ggplot(df_grouped, aes(x = Date, y = Request_Count)) +
+d <- ggplot(df_grouped, aes(x = Date, y = Request_Count)) +
   geom_point(alpha = 0.7, color = "#C71585") +
   geom_line(color = "#C71585") +
   facet_wrap(~ Service_Request_Category, scales = "free_y") +
   labs(title = "Service Request Trends by Category",
-       x = "Date",   # remove x label
+       x = "Date",
        y = "Request Count") +
   theme_minimal() +
   theme(
     axis.text.x = element_blank(),
-    axis.ticks.x = element_blank()
+    axis.ticks.x = element_blank(),
+    plot.background = element_rect(fill = "white", color = NA), 
+    panel.background = element_rect(fill = "white", color = NA)
   )
+
+ggsave("daily-requests-plot.png", plot = d, width = , height = 6, dpi = 300)
 
 ```
 
@@ -142,58 +146,6 @@ of using Days as well.
 
 ```{r}
 df1 <- read.csv("data/mlr_data1.csv")
-
-df1 <- df1 %>%
-  mutate(Service_Request_Category = case_when(
-    Service_Request_Type %in% c(
-      "Abandoned Vehicle", "Abandoned Vehicle/72hr Parking Ordinance", "Parking Enforcement",
-      "Public Garage or Parking Lot Complaint", "Towing Complaint - Public Impound", "Towing Impound Complaint"
-    ) ~ "Vehicle/Parking",
-    
-    Service_Request_Type %in% c(
-      "Bicycle Facility Maintenance", "Street Sign and Traffic Signal Maintenance", 
-      "Street Sign Maintenance", "Streetlight Maintenance", "Traffic Calming", 
-      "Traffic Signal Maintenance", "Safe Routes to School"
-    ) ~ "Transportation/Streets",
-    
-    Service_Request_Type %in% c(
-      "Clogged Storm Drain", "Damaged Sidewalk", "Dead Animal", "Graffiti",
-      "Illegal Dumping / Needles", "Overgrown Vegetation", "Pollution Report Form",
-      "Public Litter and Recycling Cans", "Snow and Ice", "Parks and Recreation Maintenance"
-    ) ~ "Environment/Maintenance",
-    
-    Service_Request_Type %in% c(
-      "Animal Noise", "Found a Pet", "Lost a Pet", "General Inquiry - Animal Shelter",
-      "Nuisance dogs in a park"
-    ) ~ "Animal Issues",
-    
-    Service_Request_Type %in% c(
-      "Business Related Complaint", "Business Violation of Public Health Requirements",
-      "Taxi, TNC, or Limousine Complaint or Compliment", "Nightlife Noise Complaint"
-    ) ~ "Business/Complaints",
-    
-    Service_Request_Type %in% c(
-      "General Inquiry - City Light", "General Inquiry - Customer Service Bureau",
-      "General Inquiry - Police Department", "General Inquiry - Public Utilities",
-      "General Inquiry - Transportation", "Public Utilities Direct Mail Opt Out",
-      "Internet/Cable Issue", "Wireless or Small Cell Issue"
-    ) ~ "City Services/Utilities",
-    
-    Service_Request_Type %in% c(
-      "Seattle Center", "Scooter or Bike Share Issue"
-    ) ~ "Special Facilities",
-    
-    Service_Request_Type %in% c(
-      "Feedback about the Customer Service Requests Portal", "Feedback about the Find It, Fix It mobile app",
-      "Unauthorized Encampment"
-    ) ~ "Feedback/Other",
-    
-    Service_Request_Type %in% c(
-      "ZZ-Baseline Testing Only", "ZZDONOTUSE - For Testing Only"
-    ) ~ "Testing",
-    
-    TRUE ~ "Other"  # catch anything unexpected
-  ))
 ```
 
 ```{r}
@@ -213,15 +165,14 @@ m <- ggplot(df_grouped1, aes(x = Date, y = Request_Count)) +
        x = "Date",   # remove x label
        y = "Request Count") +
   theme_minimal() +
-    theme(plot.background = element_rect(fill = "white", color = NA),  # 👈 force white background
-    panel.background = element_rect(fill = "white", color = NA))  # 👈 also inside panels)
+  theme(
+    plot.background = element_rect(fill = "white", color = NA), 
+    panel.background = element_rect(fill = "white", color = NA)
+  )
 
 ggsave("monthly-requests-plot.png", plot = m, width = 8, height = 6, dpi = 300)
 ```
 
-```{r}
-ggsave("monthly-requests-plot.png", plot = m, width = 8, height = 6, dpi = 300)
-```
 
 
 After looking at our plots, we decided to use ARIMA modeling to predict this time series data.
@@ -229,40 +180,6 @@ Within most of the categories, there is a clear and relatively stable trend acro
 backs up our use of ARIMA modeling. For categories like Special Facilities, we can see that 
 there may be some trends due to seasonal effects, however, since we are only forecasting the
 following 3 months, we decided to use a basic ARIMA model, not accounting for seasonal effects.
-
-```{r}
-library(forecast)
-library(dplyr)
-library(lubridate)
-library(ggplot2)
-
-# List of categories
-categories <- unique(df_grouped1$Service_Request_Category)
-
-# Create an empty list to store results
-forecast_list <- list()
-
-# Loop over each category
-for (cat in categories) {
-  
-  # Filter data for one category
-  df_cat <- df_grouped1 %>% filter(Service_Request_Category == cat)
-  
-  # Create time series object
-  ts_cat <- ts(df_cat$Request_Count, 
-               start = c(year(min(df_cat$Date)), month(min(df_cat$Date))),
-               frequency = 12)  # monthly
-  
-  # Fit ARIMA
-  model <- auto.arima(ts_cat)
-  
-  # Forecast next 3 months
-  fc <- forecast(model, h = 3)
-  
-  # Save the forecast
-  forecast_list[[cat]] <- fc
-}
-```
 
 ```{r}
 all_forecasts <- bind_rows(
@@ -280,15 +197,15 @@ all_forecasts <- bind_rows(
 
 
 pred <- ggplot(all_forecasts, aes(x = Date, y = Predicted_Request_Count)) +
-  geom_ribbon(aes(ymin = Lower_80, ymax = Upper_80), fill = "#C71585", alpha = 0.3) +  # Confidence interval ribbon
+  geom_ribbon(aes(ymin = Lower_80, ymax = Upper_80), fill = "#C71585", alpha = 0.3) +
   geom_line(color = "#C71585", size = 1) +  # Forecast line
-  facet_wrap(~ Service_Request_Category, scales = "free_y") +  # One plot per service category
+  facet_wrap(~ Service_Request_Category, scales = "free_y") + 
   labs(title = "Service Request Forecasts by Category",
        x = "Date",
        y = "Predicted Request Count") +
   theme_minimal() +
-  theme(plot.background = element_rect(fill = "white", color = NA),  # 👈 force white background
-    panel.background = element_rect(fill = "white", color = NA))  # 👈 also inside panels)
+  theme(plot.background = element_rect(fill = "white", color = NA),
+    panel.background = element_rect(fill = "white", color = NA))
 
 ggsave("predictive-plot.png", plot = pred, width = 8, height = 6, dpi = 300)
 ```
