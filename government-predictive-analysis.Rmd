@@ -205,7 +205,7 @@ df_grouped1 <- df1 %>%
   summarise(Request_Count = sum(Request_Count)) %>%
   ungroup()
 
-ggplot(df_grouped1, aes(x = Date, y = Request_Count)) +
+m <- ggplot(df_grouped1, aes(x = Date, y = Request_Count)) +
   geom_point(alpha = 0.7, color = "#C71585") +
   geom_line(color = "#C71585") +
   facet_wrap(~ Service_Request_Category, scales = "free_y") +
@@ -213,9 +213,16 @@ ggplot(df_grouped1, aes(x = Date, y = Request_Count)) +
        x = "Date",   # remove x label
        y = "Request Count") +
   theme_minimal() +
-  theme(
-  )
+    theme(plot.background = element_rect(fill = "white", color = NA),  # 👈 force white background
+    panel.background = element_rect(fill = "white", color = NA))  # 👈 also inside panels)
+
+ggsave("monthly-requests-plot.png", plot = m, width = 8, height = 6, dpi = 300)
 ```
+
+```{r}
+ggsave("monthly-requests-plot.png", plot = m, width = 8, height = 6, dpi = 300)
+```
+
 
 After looking at our plots, we decided to use ARIMA modeling to predict this time series data.
 Within most of the categories, there is a clear and relatively stable trend across time which
@@ -272,14 +279,18 @@ all_forecasts <- bind_rows(
 )
 
 
-ggplot(all_forecasts, aes(x = Date, y = Predicted_Request_Count)) +
+pred <- ggplot(all_forecasts, aes(x = Date, y = Predicted_Request_Count)) +
   geom_ribbon(aes(ymin = Lower_80, ymax = Upper_80), fill = "#C71585", alpha = 0.3) +  # Confidence interval ribbon
   geom_line(color = "#C71585", size = 1) +  # Forecast line
   facet_wrap(~ Service_Request_Category, scales = "free_y") +  # One plot per service category
   labs(title = "Service Request Forecasts by Category",
        x = "Date",
        y = "Predicted Request Count") +
-  theme_minimal()
+  theme_minimal() +
+  theme(plot.background = element_rect(fill = "white", color = NA),  # 👈 force white background
+    panel.background = element_rect(fill = "white", color = NA))  # 👈 also inside panels)
+
+ggsave("predictive-plot.png", plot = pred, width = 8, height = 6, dpi = 300)
 ```
 
 We are making our prediction with an 80% confidence interval. Naturally with ARIMA models,
