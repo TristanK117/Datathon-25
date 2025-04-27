@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -46,13 +48,21 @@ body {
   background-color: lightpink; /* Match the footer's background color */
 }
 
+.section h1 {
+  color: #592B91; /* Set all section titles to the same color as Home */
+}
+
+.section p {
+  font-family: 'Poppins', sans-serif; /* Use the Poppins font */
+  font-size: 1.2rem; /* Adjust the font size */
+  line-height: 1.5; /* Improve readability */
+  color: black; /* Optional: Change the text color */
+}
+
 #home {
   background-color: lightpink;
 }
 
-#home h1 {
-  color: #592B91; /* Change the home page title color to purple */
-}
 
 #about {
   background-color: lightpink;
