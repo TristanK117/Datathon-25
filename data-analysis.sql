@@ -123,4 +123,47 @@ WITH a AS (
     GROUP BY [Date], Service_Request_Type
 )
 SELECT [Date], Service_Request_Type, SUM(Request_Count) OVER(PARTITION BY Service_Request_Type ORDER BY [Date]) Moving_Sum_Requests
-FROM b
+FROM b;
+
+-- Machine Learning Dataset
+
+WITH start AS (
+    SELECT *,
+           YEAR(Created_Date) AS Year,
+           MONTH(Created_Date) AS Month,
+           DAY(Created_Date) AS Day,
+           DATEPART(HOUR, Created_Date) AS Hour
+    FROM [clean-customer-service]
+)
+SELECT Service_Request_Type, [Year], [Month], [Day], COUNT(*)
+FROM start
+GROUP BY Service_Request_Type, [Year], [Month], [Day];
+
+WITH start AS (
+    SELECT *,
+           YEAR(Created_Date) AS Year,
+           MONTH(Created_Date) AS Month,
+           DAY(Created_Date) AS Day,
+           DATEPART(HOUR, Created_Date) AS Hour
+    FROM [clean-customer-service]
+)
+SELECT 
+    Service_Request_Type, 
+    Police_Precinct,
+    Method_Received,
+    Status,
+    [Year], 
+    [Month],
+    COUNT(*) AS Request_Count
+FROM start
+WHERE Police_Precinct IS NOT NULL
+GROUP BY 
+    Service_Request_Type, 
+    Police_Precinct,
+    Method_Received,
+    Status,
+    [Year], 
+    [Month]
+ORDER BY Request_Count DESC;
+
+SELECT Distinct(Service_Request_Type) FROM [clean-customer-service]
